@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<head>
+  <!--<meta charset="utf-8">-->
+  <style>
+    @font-face {
+      src: url('DecovarAlpha-VF.subset.ttf') format("truetype");
+      font-family: "DecovarAlpha";
+    }
+	
+	
+    #abc {
+		font-family: "DecovarAlpha";
+		font-size: 180px;
+		text-align: center;
+		padding-top: 20px;
+		font-variation-settings: "BLDA" 0, "TRMD" 342, "TRMC" 432.524, "SKLD" 432.524, "TRML" 536.688, "SKLA" 493.286, "TRMF" 0, "TRMK" 0, "BLDB" 0, "WMX2" 0, "TRMB" 0, "TRMA" 0, "SKLB" 0, "TRMG" 0, "TRME" 0;
+		background-color: rgb(76, 34, 179);
+		color: white;
+
+    }
+	
+	p {
+		font-family: "DecovarAlpha";
+	}
+	
+  </style>
+
+  
+</head>
+
+<body>
+
+	<input class="slider" type=range min=0 max=1000 value="50" id="myRange" onchange="FT(0)" >
+	<input class = "slider1" type=range min=0 max=1000 class="slider1"  onchange="FT(1)">
+	<input type=range min=0 max=1000>
+	<input type=range min=0 max=1000>
+	<p class='DecovarAlpha' id="abc" >
+		DECOVAR
+	</p>
+
+<script>
+
+	let input = document.querySelector('.slider1');
+	let p = document.querySelector('p');
+
+	//input.addEventListener('input', e => {
+	//  p.style.fontVariationSettings = `'SKLD' ${input.value}`
+	//});
+
+
+	let input1 = document.querySelector('.slider');
+	let b = document.querySelector('b');
+
+	input1.addEventListener('input', e => {
+	  p.style.fontVariationSettings = `'BLDA' ${input1.value}`, `'SKLD' ${input.value}`
+	});
+
+
+
+</script>
+</body>
+
+</html>
