@@ -32,32 +32,109 @@
 
 <body>
 
-	<input class="slider" type=range min=0 max=1000 value="50" id="myRange" onchange="FT(0)" >
-	<input class = "slider1" type=range min=0 max=1000 class="slider1"  onchange="FT(1)">
-	<input type=range min=0 max=1000>
-	<input type=range min=0 max=1000>
+	<input class="slider"	value =0 type=range min=0 max=1000 onchange="FT(0)" >
+	<input class = "slider1" value =342 type=range min=0 max=1000 onchange="FT(0)">
+	<input class="slider2" value =432.524 type=range min=0 max=1000 onchange="FT(0)" >
+	<input class = "slider3"value =432.524 type=range min=0 max=1000 onchange="FT(0)">
+	<input class="slider4" value =536.688 type=range min=0 max=1000 onchange="FT(0)" ><br>
+	<input class = "slider5" value =493.286 type=range min=0 max=1000 onchange="FT(0)">
+	<input class="slider6" value =0 type=range min=0 max=1000 onchange="FT(0)" >
+	<input class = "slider7" value =0 type=range min=0 max=1000 onchange="FT(0)">
+	<input class="slider8" value =0 type=range min=0 max=1000 onchange="FT(0)" ><br>
+	<input class = "slider9"value =0 type=range min=0 max=1000 onchange="FT(0)">
+	<input class="slider10"value =0 type=range min=0 max=1000 onchange="FT(0)" >
+	<input class = "slider11"value =0 type=range min=0 max=1000 onchange="FT(0)">
+	<input class="slider12" value =0 type=range min=0 max=1000 onchange="FT(0)" ><br>
+	<input class = "slider13" value =0 type=range min=0 max=1000 onchange="FT(0)">
+	<input class="slider14" value =0 type=range min=0 max=1000 onchange="FT(0)" >
 	<p class='DecovarAlpha' id="abc" >
 		DECOVAR
 	</p>
 
 <script>
 
-	let input = document.querySelector('.slider1');
+	let input = document.querySelector('.slider');
+	let input1 = document.querySelector('.slider1');
+	let input2 = document.querySelector('.slider2');
+	let input3 = document.querySelector('.slider3');
+	let input4 = document.querySelector('.slider4');
+	let input5 = document.querySelector('.slider5');
+	let input6 = document.querySelector('.slider6');
+	let input7 = document.querySelector('.slider7');
+	let input8 = document.querySelector('.slider8');
+	let input9 = document.querySelector('.slider9');
+	let input10 = document.querySelector('.slider10');
+	let input11 = document.querySelector('.slider11');
+	let input12 = document.querySelector('.slider12');
+	let input13 = document.querySelector('.slider13');
+	let input14 = document.querySelector('.slider14');
 	let p = document.querySelector('p');
 
-	//input.addEventListener('input', e => {
-	//  p.style.fontVariationSettings = `'SKLD' ${input.value}`
-	//});
-
-
-	let input1 = document.querySelector('.slider');
-	let b = document.querySelector('b');
+	input.addEventListener('input', e => {
+	   setvalue();
+	});
 
 	input1.addEventListener('input', e => {
-	  p.style.fontVariationSettings = `'BLDA' ${input1.value}`, `'SKLD' ${input.value}`
+	   setvalue();
+	});
+
+	input2.addEventListener('input', e => {
+	  setvalue();
+	});
+
+	input3.addEventListener('input', e => {
+	  setvalue();
+	});
+
+	input4.addEventListener('input', e => {
+	  setvalue();
+	});
+
+	input5.addEventListener('input', e => {
+	  setvalue();
+	});
+
+	input6.addEventListener('input', e => {
+	  setvalue();
+	});
+
+	input7.addEventListener('input', e => {
+	  setvalue();
+	});
+
+	input8.addEventListener('input', e => {
+	  setvalue();
+	});
+
+	input9.addEventListener('input', e => {
+	  setvalue();
+	});
+
+	input10.addEventListener('input', e => {
+	  setvalue();
+	});
+
+	input11.addEventListener('input', e => {
+	 setvalue();
+	});
+
+	input12.addEventListener('input', e => {
+	  setvalue();
+	});
+
+	input13.addEventListener('input', e => {
+	  setvalue();
+	});
+
+	input14.addEventListener('input', e => {
+	  setvalue();
 	});
 
 
+function setvalue() {
+	// body...
+	p.style.fontVariationSettings = `"BLDA" ${input.value}, "TRMD" ${input1.value}, "TRMC" ${input2.value}, "SKLD" ${input3.value}, "TRML" ${input4.value}, "SKLA" ${input5.value}, "TRMF" ${input6.value}, "TRMK" ${input7.value}, "BLDB" ${input8.value}, "WMX2" ${input9.value}, "TRMB" ${input10.value}, "TRMA" ${input11.value}, "SKLB" ${input12.value}, "TRMG" ${input13.value}, "TRME" ${input14.value}`
+}
 
 </script>
 </body>
