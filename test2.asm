@@ -29,4 +29,4 @@ typeinfo for std::thread::_State_impl<std::thread::_Invoker<std::tuple<int (*)()
   .quad typeinfo name for std::thread::_State_impl<std::thread::_Invoker<std::tuple<int (*)()> > >
   .quad typeinfo for std::thread::_State
 typeinfo name for std::thread::_State_impl<std::thread::_Invoker<std::tuple<int (*)()> > >:
-  .string "NSt6thread11_State_implINS_8_InvokerISt5tupleIJPFivEEEEEEE"
+  .string "NSt6thread11_State_implINS_8_InvokerISt5tupleIJPFivEEEEEEE" 
